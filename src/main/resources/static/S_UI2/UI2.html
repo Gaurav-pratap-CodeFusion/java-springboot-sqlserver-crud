@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="UI2.css">
+</head>
+<body>
+<div class="container">
+  <h1>Student Detail Form</h1>
+  <div class="form-group">
+    <label for="studentId">Student ID:</label>
+    <input type="text" id="studentId" placeholder="e.g., STU001" readonly>
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" placeholder="Enter first name">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" placeholder="Enter last name">
+  </div>
+  <div class="form-group">
+    <label for="course">Course:</label>
+    <input type="text" id="course" placeholder="e.g., Computer Science">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="e.g., example@domain.com">
+  </div>
+
+  <p id="message" class="message"></p>
+
+  <div style="display: flex; justify-content: space-between; gap: 10px;">
+    <button id="addNewBtn" style="background-color: #2196F3;">Add New</button>
+    <button id="deleteBtn" style="background-color: #f44336;">Delete</button>
+  </div>
+  <button id="saveBtn" style="background-color: #4CAF50; display: none;">Save</button>
+  <button id="submitBtn" style="background-color: #3f51b5; display: none;">Update</button>
+</div>
+
+<script src="UI2.js"></script>
+</body>
+</html>
